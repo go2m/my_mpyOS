@@ -42,6 +42,7 @@ jobs:
           python -m pip install sphinx-adc-theme
           # python -m pip install sphinxcontrib-apidoc
           python -m pip install sphinx-autoapi
+          python -m pip install sphinx-copybutton
 
       - name: make the sphinx docs
         run: |
