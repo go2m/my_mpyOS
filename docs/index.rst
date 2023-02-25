@@ -7,7 +7,6 @@ mpyOS documentation and references
 	mpyOS
 	requirements
 	sccp
-	reST
 	debug
 	license
 	autoapi/index.rst
