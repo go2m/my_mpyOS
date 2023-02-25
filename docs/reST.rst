@@ -14,11 +14,11 @@ Facts database <https://www.sphinx-doc.org/en/master/usage/restructuredtext/inde
 .. toctree::
    :maxdepth: 2
 
-.. literalinclude:: ../code/lib/wifi.py
+.. literalinclude:: ../code/lib1/wifi.py
    :language: python
    :linenos:
    
-.. literalinclude:: ../code/lib/wifi.py
+.. literalinclude:: ../code/lib1/wifi.py
    :language: python
    
 
