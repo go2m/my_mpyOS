@@ -43,6 +43,7 @@ jobs:
           python -m pip install sphinxcontrib-apidoc
           python -m pip install sphinx-autoapi
           python -m pip install sphinx-copybutton
+          python -m pip install sphinx_design
 
       - name: make the sphinx docs
         run: |
