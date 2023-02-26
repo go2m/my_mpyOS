@@ -1,0 +1,53 @@
+:py:mod:`para`
+==============
+
+.. py:module:: para
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   para.version
+   para.para
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   para._debug
+   para.parameters
+   para.return_code
+
+
+.. py:function:: version()
+
+   version von para
+
+
+.. py:function:: para(p='-v', _debug=False)
+
+   display all parameters
+
+
+.. py:data:: _debug
+   :value: True
+
+   
+
+.. py:data:: parameters
+
+   
+
+.. py:data:: return_code
+
+   
+
