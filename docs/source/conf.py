@@ -65,6 +65,7 @@ extensions = [
     #'sphinx.ext.doctest',
     'autoapi.extension',
     'sphinx_copybutton',
+    'sphinx_design',
 ]
 autosummary_generate = True  # Turn on sphinx.ext.autosummary
 autodoc_typehints = 'description'
@@ -148,14 +149,14 @@ rst_epilog = """
 
 #html_theme = 'alabaster'
 
-#import sphinx_rtd_theme
-#html_theme = 'sphinx_rtd_theme'
-#html_theme_path = [sphinx_rtd_theme.get_html_theme_path(), '.']
+import sphinx_rtd_theme
+html_theme = 'sphinx_rtd_theme'
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path(), '.']
 
 
-import sphinx_adc_theme
-html_theme = 'sphinx_adc_theme'
-html_theme_path = [sphinx_adc_theme.get_html_theme_path()]
+#import sphinx_adc_theme
+#html_theme = 'sphinx_adc_theme'
+#html_theme_path = [sphinx_adc_theme.get_html_theme_path()]
 
 #import sphinx_pdj_theme
 #html_theme = 'sphinx_pdj_theme'
@@ -199,6 +200,11 @@ else:
 # pixels large.
 html_favicon = '../static/favicon.ico'
 #html_favicon = 'docs/static/favicon.ico'
+
+#https://sphinx-design.readthedocs.io/en/latest/badges_buttons.html#material-design-icons
+html_css_files = [
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

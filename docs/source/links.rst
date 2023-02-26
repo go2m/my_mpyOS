@@ -75,3 +75,7 @@ https://techtotinker.blogspot.com/
 https://github.com/micropython/micropython
 
 https://microcontrollerslab.com/?s=micropython
+
+https://sphinx-design.readthedocs.io/en/latest/grids.html
+
+

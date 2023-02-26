@@ -12,6 +12,7 @@ mpyOS documentation and references
 	license
 	autoapi/index.rst
 	links
+	design
 
 
 
