@@ -1,16 +1,23 @@
-Welcome to our project!
-===================================
-
-This page documents our functions and examples.
-
-.. note::
-
-   This project is under active development.
-
+mpyOS documentation and references
+========================================
 
 .. toctree::
-   :hidden:
 
-   usage
-   contribute
-   autoapi/index
+	ESP32/index.rst
+	mpyOS
+	requirements
+	sccp
+	reST
+	debug
+	license
+	autoapi/index.rst
+	links
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
