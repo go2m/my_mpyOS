@@ -1,0 +1,501 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>supported Hardware &mdash; mpyOS for MicroPython 1.0.10 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+      <link rel="stylesheet" href="../_static/customstyle.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/documentation_options.js?v=377e76b0"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="mpyOS - microPython Operating System" href="../mpyOS.html" />
+    <link rel="prev" title="mpyOS documentation and references" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            mpyOS for MicroPython
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">supported Hardware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#esp32">ESP32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d1-mini-esp32-wifi-with-display">D1 Mini ESP32 WiFi with Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#esp32-lilygo-ttgo-t-display">ESP32 LILYGO® TTGO T-Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#esp32-s2">ESP32-S2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lilygo-ttgo-t8-esp32-s2-v1-1-st7789-1-14-inch-lcd-display">LILYGO® TTGO T8 ESP32-S2 V1.1 ST7789 1.14 Inch LCD Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#esp32-s3">ESP32-S3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#esp32-c3">ESP32-C3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#raspberry-pico">Raspberry Pico</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mpyOS.html">mpyOS - microPython Operating System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirements.html">requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sccp.html">SCCP- Secure Console Command Processor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reST.html">Willkommen Darstellung von Beispiel Texten mit Sphinx!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debug.html">debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">mpyOS license information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autoapi/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../links.html">links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design.html">design</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">mpyOS for MicroPython</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">supported Hardware</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ESP32/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="supported-hardware">
+<h1>supported Hardware<a class="headerlink" href="#supported-hardware" title="Link to this heading">¶</a></h1>
+<p>The first step is to install the current version of MicroPython on the chip.</p>
+<p>Using esptool.py you can erase the flash with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">erase_flash</span>
+</pre></div>
+</div>
+<p>And then deploy the new firmware using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">chip</span> <span class="n">esp32</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mh">0x1000</span> <span class="n">esp32</span><span class="o">-</span><span class="mi">20180511</span><span class="o">-</span><span class="n">v1</span><span class="mf">.9.4</span><span class="o">.</span><span class="n">bin</span>
+</pre></div>
+</div>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>You might need to change the “port” setting to something else relevant for your
+PC</p></li>
+<li><p>You may need to reduce the baudrate if you get errors when flashing
+(eg down to 115200 by adding <code class="docutils literal notranslate"><span class="pre">--baud</span> <span class="pre">115200</span></code> into the command)</p></li>
+<li><p>For some boards with a particular FlashROM configuration you may need to
+change the flash mode (eg by adding <code class="docutils literal notranslate"><span class="pre">-fm</span> <span class="pre">dio</span></code> into the command)</p></li>
+<li><p>The filename of the firmware should match the file that you have</p></li>
+</ul>
+<p>If the above commands run without error then MicroPython should be installed on
+your board!</p>
+<section id="esp32">
+<h2>ESP32<a class="headerlink" href="#esp32" title="Link to this heading">¶</a></h2>
+<p>Using esptool.py you can erase the flash with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">erase_flash</span>
+</pre></div>
+</div>
+<p>And then deploy the new firmware using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">chip</span> <span class="n">esp32</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mh">0x1000</span> <span class="n">esp32</span><span class="o">-</span><span class="mi">20180511</span><span class="o">-</span><span class="n">v1</span><span class="mf">.9.4</span><span class="o">.</span><span class="n">bin</span>
+</pre></div>
+</div>
+</section>
+<section id="d1-mini-esp32-wifi-with-display">
+<h2>D1 Mini ESP32 WiFi with Display<a class="headerlink" href="#d1-mini-esp32-wifi-with-display" title="Link to this heading">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/tft_2.4_v1.0.0_1_16x16.jpg"><img alt="../_images/tft_2.4_v1.0.0_1_16x16.jpg" src="../_images/tft_2.4_v1.0.0_1_16x16.jpg" style="width: 240.0px; height: 240.0px;" />
+</a>
+<p>more Information over Hardware <a class="reference external" href="https://forum.mhetlive.com/topic/8/mh-et-live-minikit-for-esp32">MH-ET-LIVE</a>.</p>
+<a class="reference internal image-reference" href="../_images/D1_mini_ESP32_pinout.webp"><img alt="../_images/D1_mini_ESP32_pinout.webp" src="../_images/D1_mini_ESP32_pinout.webp" style="width: 417.59999999999997px; height: 287.4px;" />
+</a>
+<p>more Information over Hardware <a class="reference external" href="https://www.wemos.cc/en/latest/d1_mini_shield/tft_2_4.html">TFT 2.4 Touch Shields</a>.</p>
+<p>Using esptool.py you can erase the flash with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">SLAB_USBtoUART</span> <span class="n">erase_flash</span>
+</pre></div>
+</div>
+<p>Firmware from  <a class="reference external" href="https://github.com/russhughes/ili9342c_mpy/tree/main/firmware/GENERIC-ili9342">GENERIC-ili9342</a>.</p>
+<p>And then deploy the new firmware using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">chip</span> <span class="n">esp32</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">SLAB_USBtoUART</span> <span class="o">--</span><span class="n">baud</span> <span class="mi">115200</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mh">0x1000</span> <span class="n">firmware</span><span class="o">.</span><span class="n">bin</span>
+</pre></div>
+</div>
+<p>result:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="n">v4</span><span class="mf">.3</span>
+<span class="n">Serial</span> <span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">SLAB_USBtoUART</span>
+<span class="n">Connecting</span><span class="o">.......</span>
+<span class="n">Chip</span> <span class="ow">is</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">D0WDQ6</span> <span class="p">(</span><span class="n">revision</span> <span class="n">v1</span><span class="mf">.0</span><span class="p">)</span>
+<span class="n">Features</span><span class="p">:</span> <span class="n">WiFi</span><span class="p">,</span> <span class="n">BT</span><span class="p">,</span> <span class="n">Dual</span> <span class="n">Core</span><span class="p">,</span> <span class="mi">240</span><span class="n">MHz</span><span class="p">,</span> <span class="n">VRef</span> <span class="n">calibration</span> <span class="ow">in</span> <span class="n">efuse</span><span class="p">,</span> <span class="n">Coding</span> <span class="n">Scheme</span> <span class="kc">None</span>
+<span class="n">Crystal</span> <span class="ow">is</span> <span class="mi">40</span><span class="n">MHz</span>
+<span class="n">MAC</span><span class="p">:</span> <span class="n">a4</span><span class="p">:</span><span class="n">cf</span><span class="p">:</span><span class="mi">12</span><span class="p">:</span><span class="mi">44</span><span class="p">:</span><span class="n">d8</span><span class="p">:</span><span class="n">a4</span>
+<span class="n">Uploading</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Running</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Stub</span> <span class="n">running</span><span class="o">...</span>
+<span class="n">Configuring</span> <span class="n">flash</span> <span class="n">size</span><span class="o">...</span>
+<span class="n">Flash</span> <span class="n">will</span> <span class="n">be</span> <span class="n">erased</span> <span class="kn">from</span><span class="w"> </span><span class="mh">0x00001000</span> <span class="n">to</span> <span class="mh">0x001a0fff</span><span class="o">...</span>
+<span class="n">Compressed</span> <span class="mi">1701552</span> <span class="nb">bytes</span> <span class="n">to</span> <span class="mf">1053029.</span><span class="o">..</span>
+<span class="n">Wrote</span> <span class="mi">1701552</span> <span class="nb">bytes</span> <span class="p">(</span><span class="mi">1053029</span> <span class="n">compressed</span><span class="p">)</span> <span class="n">at</span> <span class="mh">0x00001000</span> <span class="ow">in</span> <span class="mf">92.9</span> <span class="n">seconds</span> <span class="p">(</span><span class="n">effective</span> <span class="mf">146.5</span> <span class="n">kbit</span><span class="o">/</span><span class="n">s</span><span class="p">)</span><span class="o">...</span>
+<span class="n">Hash</span> <span class="n">of</span> <span class="n">data</span> <span class="n">verified</span><span class="o">.</span>
+<span class="n">Leaving</span><span class="o">...</span>
+<span class="n">Hard</span> <span class="n">resetting</span> <span class="n">via</span> <span class="n">RTS</span> <span class="n">pin</span><span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="esp32-lilygo-ttgo-t-display">
+<h2>ESP32 LILYGO® TTGO T-Display<a class="headerlink" href="#esp32-lilygo-ttgo-t-display" title="Link to this heading">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/ESP32-TTGO-T-Display.jpg"><img alt="../_images/ESP32-TTGO-T-Display.jpg" src="../_images/ESP32-TTGO-T-Display.jpg" style="width: 300.0px; height: 300.0px;" />
+</a>
+<a class="reference internal image-reference" href="../_images/CgAGTF0Zc5SAG4UiAAJJ4Gb-zko935.jpg"><img alt="../_images/CgAGTF0Zc5SAG4UiAAJJ4Gb-zko935.jpg" src="../_images/CgAGTF0Zc5SAG4UiAAJJ4Gb-zko935.jpg" style="width: 300.0px; height: 300.0px;" />
+</a>
+<a class="reference internal image-reference" href="../_images/H39c2130da52e43e7ac7ccee871075b46E.webp"><img alt="../_images/H39c2130da52e43e7ac7ccee871075b46E.webp" src="../_images/H39c2130da52e43e7ac7ccee871075b46E.webp" style="width: 599.4px; height: 423.59999999999997px;" />
+</a>
+<p>more Information over Hardware <a class="reference external" href="https://github.com/Xinyuan-LilyGO/TTGO-T-Display">Xinyuan-LilyGO</a>.</p>
+<p>Firmware from  <a class="reference external" href="https://github.com/russhughes/st7789_mpy/blob/master/firmware/T-DISPLAY-ESP32/firmware.bin">Russ Hughes</a>.</p>
+<p>Using esptool.py you can erase the flash with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">SLAB_USBtoUART</span> <span class="n">erase_flash</span>
+</pre></div>
+</div>
+<p>result:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="n">v4</span><span class="mf">.3</span>
+<span class="n">Serial</span> <span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">SLAB_USBtoUART</span>
+<span class="n">Connecting</span><span class="o">....</span>
+<span class="n">Detecting</span> <span class="n">chip</span> <span class="nb">type</span><span class="o">...</span> <span class="n">Unsupported</span> <span class="n">detection</span> <span class="n">protocol</span><span class="p">,</span> <span class="n">switching</span> <span class="ow">and</span> <span class="n">trying</span> <span class="n">again</span><span class="o">...</span>
+<span class="n">Connecting</span><span class="o">....</span>
+<span class="n">Detecting</span> <span class="n">chip</span> <span class="nb">type</span><span class="o">...</span> <span class="n">ESP32</span>
+<span class="n">Chip</span> <span class="ow">is</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">D0WDQ6</span><span class="o">-</span><span class="n">V3</span> <span class="p">(</span><span class="n">revision</span> <span class="n">v3</span><span class="mf">.0</span><span class="p">)</span>
+<span class="n">Features</span><span class="p">:</span> <span class="n">WiFi</span><span class="p">,</span> <span class="n">BT</span><span class="p">,</span> <span class="n">Dual</span> <span class="n">Core</span><span class="p">,</span> <span class="mi">240</span><span class="n">MHz</span><span class="p">,</span> <span class="n">VRef</span> <span class="n">calibration</span> <span class="ow">in</span> <span class="n">efuse</span><span class="p">,</span> <span class="n">Coding</span> <span class="n">Scheme</span> <span class="kc">None</span>
+<span class="n">Crystal</span> <span class="ow">is</span> <span class="mi">40</span><span class="n">MHz</span>
+<span class="n">MAC</span><span class="p">:</span> <span class="n">c4</span><span class="p">:</span><span class="mi">4</span><span class="n">f</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">7</span><span class="n">f</span><span class="p">:</span><span class="n">f5</span><span class="p">:</span><span class="mi">89</span>
+<span class="n">Uploading</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Running</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Stub</span> <span class="n">running</span><span class="o">...</span>
+<span class="n">Erasing</span> <span class="n">flash</span> <span class="p">(</span><span class="n">this</span> <span class="n">may</span> <span class="n">take</span> <span class="n">a</span> <span class="k">while</span><span class="p">)</span><span class="o">...</span>
+<span class="n">Chip</span> <span class="n">erase</span> <span class="n">completed</span> <span class="n">successfully</span> <span class="ow">in</span> <span class="mf">39.8</span><span class="n">s</span>
+<span class="n">Hard</span> <span class="n">resetting</span> <span class="n">via</span> <span class="n">RTS</span> <span class="n">pin</span><span class="o">...</span>
+</pre></div>
+</div>
+<p>And then deploy the new firmware using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">chip</span> <span class="n">esp32</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">SLAB_USBtoUART</span> <span class="o">--</span><span class="n">baud</span> <span class="mi">115200</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mh">0x1000</span> <span class="n">firmware</span><span class="o">.</span><span class="n">bin</span>
+</pre></div>
+</div>
+<p>result:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="n">v4</span><span class="mf">.3</span>
+<span class="n">Serial</span> <span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">SLAB_USBtoUART</span>
+<span class="n">Connecting</span><span class="o">....</span>
+<span class="n">Chip</span> <span class="ow">is</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">D0WDQ6</span><span class="o">-</span><span class="n">V3</span> <span class="p">(</span><span class="n">revision</span> <span class="n">v3</span><span class="mf">.0</span><span class="p">)</span>
+<span class="n">Features</span><span class="p">:</span> <span class="n">WiFi</span><span class="p">,</span> <span class="n">BT</span><span class="p">,</span> <span class="n">Dual</span> <span class="n">Core</span><span class="p">,</span> <span class="mi">240</span><span class="n">MHz</span><span class="p">,</span> <span class="n">VRef</span> <span class="n">calibration</span> <span class="ow">in</span> <span class="n">efuse</span><span class="p">,</span> <span class="n">Coding</span> <span class="n">Scheme</span> <span class="kc">None</span>
+<span class="n">Crystal</span> <span class="ow">is</span> <span class="mi">40</span><span class="n">MHz</span>
+<span class="n">MAC</span><span class="p">:</span> <span class="n">c4</span><span class="p">:</span><span class="mi">4</span><span class="n">f</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">7</span><span class="n">f</span><span class="p">:</span><span class="n">f5</span><span class="p">:</span><span class="mi">89</span>
+<span class="n">Uploading</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Running</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Stub</span> <span class="n">running</span><span class="o">...</span>
+<span class="n">Configuring</span> <span class="n">flash</span> <span class="n">size</span><span class="o">...</span>
+<span class="n">Flash</span> <span class="n">will</span> <span class="n">be</span> <span class="n">erased</span> <span class="kn">from</span><span class="w"> </span><span class="mh">0x00001000</span> <span class="n">to</span> <span class="mh">0x001b5fff</span><span class="o">...</span>
+<span class="n">Compressed</span> <span class="mi">1788416</span> <span class="nb">bytes</span> <span class="n">to</span> <span class="mf">1096932.</span><span class="o">..</span>
+<span class="n">Wrote</span> <span class="mi">1788416</span> <span class="nb">bytes</span> <span class="p">(</span><span class="mi">1096932</span> <span class="n">compressed</span><span class="p">)</span> <span class="n">at</span> <span class="mh">0x00001000</span> <span class="ow">in</span> <span class="mf">96.9</span> <span class="n">seconds</span> <span class="p">(</span><span class="n">effective</span> <span class="mf">147.7</span> <span class="n">kbit</span><span class="o">/</span><span class="n">s</span><span class="p">)</span><span class="o">...</span>
+<span class="n">Hash</span> <span class="n">of</span> <span class="n">data</span> <span class="n">verified</span><span class="o">.</span>
+
+<span class="n">Leaving</span><span class="o">...</span>
+<span class="n">Hard</span> <span class="n">resetting</span> <span class="n">via</span> <span class="n">RTS</span> <span class="n">pin</span><span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="esp32-s2">
+<h2>ESP32-S2<a class="headerlink" href="#esp32-s2" title="Link to this heading">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/s2_mini_v1.0.0_1_16x161.jpg"><img alt="../_images/s2_mini_v1.0.0_1_16x161.jpg" src="../_images/s2_mini_v1.0.0_1_16x161.jpg" style="width: 240.0px; height: 240.0px;" />
+</a>
+<a class="reference internal image-reference" href="../_images/s2-pico-pinout.jpeg"><img alt="../_images/s2-pico-pinout.jpeg" src="../_images/s2-pico-pinout.jpeg" style="width: 400.0px; height: 225.0px;" />
+</a>
+<a class="reference internal image-reference" href="../_images/s2_mini_v1.0.0_2_16x16.jpg"><img alt="../_images/s2_mini_v1.0.0_2_16x16.jpg" src="../_images/s2_mini_v1.0.0_2_16x16.jpg" style="width: 240.0px; height: 240.0px;" />
+</a>
+<p>for more Information go to <a class="reference external" href="https://www.wemos.cc/en/latest/s2/s2_mini.html">WEMOS</a>.</p>
+<p>Make S2 boards into Device Firmware Upgrade (DFU) mode.</p>
+<p>Hold on Button 0
+Press Button Reset
+Release Button 0 When you hear the prompt tone on usb reconnection</p>
+<p>now search serial port with:
+ls /dev/tty.*</p>
+<p>Using esptool.py you can erase the flash with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">erase_flash</span>
+<span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">tty</span><span class="o">.</span><span class="n">usbmodem01</span> <span class="n">erase_flash</span>
+</pre></div>
+</div>
+<p>result:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">tty</span><span class="o">.</span><span class="n">usbmodem01</span> <span class="n">erase_flash</span>
+<span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="n">v4</span><span class="mf">.3</span>
+<span class="n">Serial</span> <span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">tty</span><span class="o">.</span><span class="n">usbmodem01</span>
+<span class="n">Connecting</span><span class="o">...</span>
+<span class="n">Detecting</span> <span class="n">chip</span> <span class="nb">type</span><span class="o">...</span> <span class="n">Unsupported</span> <span class="n">detection</span> <span class="n">protocol</span><span class="p">,</span> <span class="n">switching</span> <span class="ow">and</span> <span class="n">trying</span> <span class="n">again</span><span class="o">...</span>
+<span class="n">Detecting</span> <span class="n">chip</span> <span class="nb">type</span><span class="o">...</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">S2</span>
+<span class="n">Chip</span> <span class="ow">is</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">S2FNR2</span> <span class="p">(</span><span class="n">revision</span> <span class="n">v0</span><span class="mf">.0</span><span class="p">)</span>
+<span class="n">Features</span><span class="p">:</span> <span class="n">WiFi</span><span class="p">,</span> <span class="n">Embedded</span> <span class="n">Flash</span> <span class="mi">4</span><span class="n">MB</span><span class="p">,</span> <span class="n">Embedded</span> <span class="n">PSRAM</span> <span class="mi">2</span><span class="n">MB</span><span class="p">,</span> <span class="n">ADC</span> <span class="ow">and</span> <span class="n">temperature</span> <span class="n">sensor</span> <span class="n">calibration</span> <span class="ow">in</span> <span class="n">BLK2</span> <span class="n">of</span> <span class="n">efuse</span> <span class="n">V1</span>
+<span class="n">Crystal</span> <span class="ow">is</span> <span class="mi">40</span><span class="n">MHz</span>
+<span class="n">MAC</span><span class="p">:</span> <span class="mi">84</span><span class="p">:</span><span class="n">f7</span><span class="p">:</span><span class="mi">03</span><span class="p">:</span><span class="n">xx</span><span class="p">:</span><span class="n">xx</span><span class="p">:</span><span class="n">xx</span>
+<span class="n">Uploading</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Running</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Stub</span> <span class="n">running</span><span class="o">...</span>
+<span class="n">Erasing</span> <span class="n">flash</span> <span class="p">(</span><span class="n">this</span> <span class="n">may</span> <span class="n">take</span> <span class="n">a</span> <span class="k">while</span><span class="p">)</span><span class="o">...</span>
+<span class="n">Chip</span> <span class="n">erase</span> <span class="n">completed</span> <span class="n">successfully</span> <span class="ow">in</span> <span class="mf">16.9</span><span class="n">s</span>
+<span class="n">WARNING</span><span class="p">:</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">S2FNR2</span> <span class="p">(</span><span class="n">revision</span> <span class="n">v0</span><span class="mf">.0</span><span class="p">)</span> <span class="n">chip</span> <span class="n">was</span> <span class="n">placed</span> <span class="n">into</span> <span class="n">download</span> <span class="n">mode</span> <span class="n">using</span> <span class="n">GPIO0</span><span class="o">.</span>
+<span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="n">can</span> <span class="ow">not</span> <span class="n">exit</span> <span class="n">the</span> <span class="n">download</span> <span class="n">mode</span> <span class="n">over</span> <span class="n">USB</span><span class="o">.</span> <span class="n">To</span> <span class="n">run</span> <span class="n">the</span> <span class="n">app</span><span class="p">,</span> <span class="n">reset</span> <span class="n">the</span> <span class="n">chip</span> <span class="n">manually</span><span class="o">.</span>
+<span class="n">To</span> <span class="n">suppress</span> <span class="n">this</span> <span class="n">note</span><span class="p">,</span> <span class="nb">set</span> <span class="o">--</span><span class="n">after</span> <span class="n">option</span> <span class="n">to</span> <span class="s1">&#39;no_reset&#39;</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>And then deploy the new firmware using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">chip</span> <span class="n">esp32</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mh">0x1000</span> <span class="n">esp32</span><span class="o">-</span><span class="mi">20180511</span><span class="o">-</span><span class="n">v1</span><span class="mf">.9.4</span><span class="o">.</span><span class="n">bin</span>
+<span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">chip</span> <span class="n">esp32s2</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">tty</span><span class="o">.</span><span class="n">usbmodem01</span> <span class="o">--</span><span class="n">baud</span> <span class="mi">1000000</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mh">0x1000</span> <span class="n">firmware</span><span class="o">-</span><span class="n">LOLIN_S2_PICO</span><span class="o">-</span><span class="n">v1</span><span class="mf">.19.1</span><span class="o">-</span><span class="mi">602</span><span class="o">-</span><span class="n">g515088ffd</span><span class="o">.</span><span class="n">bin</span>
+</pre></div>
+</div>
+<p>result:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="n">v4</span><span class="mf">.3</span>
+<span class="n">Serial</span> <span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">tty</span><span class="o">.</span><span class="n">usbmodem01</span>
+<span class="n">Connecting</span><span class="o">...</span>
+<span class="n">Chip</span> <span class="ow">is</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">S2FNR2</span> <span class="p">(</span><span class="n">revision</span> <span class="n">v0</span><span class="mf">.0</span><span class="p">)</span>
+<span class="n">Features</span><span class="p">:</span> <span class="n">WiFi</span><span class="p">,</span> <span class="n">Embedded</span> <span class="n">Flash</span> <span class="mi">4</span><span class="n">MB</span><span class="p">,</span> <span class="n">Embedded</span> <span class="n">PSRAM</span> <span class="mi">2</span><span class="n">MB</span><span class="p">,</span> <span class="n">ADC</span> <span class="ow">and</span> <span class="n">temperature</span> <span class="n">sensor</span> <span class="n">calibration</span> <span class="ow">in</span> <span class="n">BLK2</span> <span class="n">of</span> <span class="n">efuse</span> <span class="n">V1</span>
+<span class="n">Crystal</span> <span class="ow">is</span> <span class="mi">40</span><span class="n">MHz</span>
+<span class="n">MAC</span><span class="p">:</span> <span class="mi">84</span><span class="p">:</span><span class="n">f7</span><span class="p">:</span><span class="mi">03</span><span class="p">:</span><span class="n">xx</span><span class="p">:</span><span class="n">xx</span><span class="p">:</span><span class="n">xx</span>
+<span class="n">Uploading</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Running</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Stub</span> <span class="n">running</span><span class="o">...</span>
+<span class="n">Changing</span> <span class="n">baud</span> <span class="n">rate</span> <span class="n">to</span> <span class="mi">1000000</span>
+<span class="n">Changed</span><span class="o">.</span>
+<span class="n">Configuring</span> <span class="n">flash</span> <span class="n">size</span><span class="o">...</span>
+<span class="n">Flash</span> <span class="n">will</span> <span class="n">be</span> <span class="n">erased</span> <span class="kn">from</span><span class="w"> </span><span class="mh">0x00001000</span> <span class="n">to</span> <span class="mh">0x0012ffff</span><span class="o">...</span>
+<span class="n">Compressed</span> <span class="mi">1238288</span> <span class="nb">bytes</span> <span class="n">to</span> <span class="mf">818236.</span><span class="o">..</span>
+<span class="n">Wrote</span> <span class="mi">1238288</span> <span class="nb">bytes</span> <span class="p">(</span><span class="mi">818236</span> <span class="n">compressed</span><span class="p">)</span> <span class="n">at</span> <span class="mh">0x00001000</span> <span class="ow">in</span> <span class="mf">23.5</span> <span class="n">seconds</span> <span class="p">(</span><span class="n">effective</span> <span class="mf">422.4</span> <span class="n">kbit</span><span class="o">/</span><span class="n">s</span><span class="p">)</span><span class="o">...</span>
+<span class="n">Hash</span> <span class="n">of</span> <span class="n">data</span> <span class="n">verified</span><span class="o">.</span>
+
+<span class="n">Leaving</span><span class="o">...</span>
+<span class="n">WARNING</span><span class="p">:</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">S2FNR2</span> <span class="p">(</span><span class="n">revision</span> <span class="n">v0</span><span class="mf">.0</span><span class="p">)</span> <span class="n">chip</span> <span class="n">was</span> <span class="n">placed</span> <span class="n">into</span> <span class="n">download</span> <span class="n">mode</span> <span class="n">using</span> <span class="n">GPIO0</span><span class="o">.</span>
+<span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="n">can</span> <span class="ow">not</span> <span class="n">exit</span> <span class="n">the</span> <span class="n">download</span> <span class="n">mode</span> <span class="n">over</span> <span class="n">USB</span><span class="o">.</span> <span class="n">To</span> <span class="n">run</span> <span class="n">the</span> <span class="n">app</span><span class="p">,</span> <span class="n">reset</span> <span class="n">the</span> <span class="n">chip</span> <span class="n">manually</span><span class="o">.</span>
+<span class="n">To</span> <span class="n">suppress</span> <span class="n">this</span> <span class="n">note</span><span class="p">,</span> <span class="nb">set</span> <span class="o">--</span><span class="n">after</span> <span class="n">option</span> <span class="n">to</span> <span class="s1">&#39;no_reset&#39;</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>run over tty:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MicroPython</span> <span class="n">v1</span><span class="mf">.19.1</span><span class="o">-</span><span class="mi">602</span><span class="o">-</span><span class="n">g515088ffd3</span> <span class="n">on</span> <span class="mi">2022</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">13</span><span class="p">;</span> <span class="n">LOLIN_S2_PICO</span> <span class="k">with</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">S2FN4R2</span>
+<span class="n">Type</span> <span class="s2">&quot;help()&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span><span class="w"> </span><span class="nn">mip</span>
+<span class="o">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<p>please check the deploy tool &lt;mip&gt;
+import mip</p>
+<p>when successfully the is right version.</p>
+</section>
+<section id="lilygo-ttgo-t8-esp32-s2-v1-1-st7789-1-14-inch-lcd-display">
+<h2>LILYGO® TTGO T8 ESP32-S2 V1.1 ST7789 1.14 Inch LCD Display<a class="headerlink" href="#lilygo-ttgo-t8-esp32-s2-v1-1-st7789-1-14-inch-lcd-display" title="Link to this heading">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/LILYGO-TTGO-T8-ESP32-S2-V1.1-ST7789.png"><img alt="../_images/LILYGO-TTGO-T8-ESP32-S2-V1.1-ST7789.png" src="../_images/LILYGO-TTGO-T8-ESP32-S2-V1.1-ST7789.png" style="width: 400.0px; height: 400.0px;" />
+</a>
+<a class="reference internal image-reference" href="../_images/H4a77f8684c144384a165d7a89476c602q.webp"><img alt="../_images/H4a77f8684c144384a165d7a89476c602q.webp" src="../_images/H4a77f8684c144384a165d7a89476c602q.webp" style="width: 599.4px; height: 423.59999999999997px;" />
+</a>
+<p>Switch to Program Mode:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">USB</span>
+
+<span class="n">On</span>
+<span class="n">o</span>   <span class="n">o</span>
+  <span class="n">o</span>   <span class="n">o</span>
+<span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<p>Using esptool.py you can erase the flash with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">&lt;</span><span class="n">port</span><span class="o">&gt;</span> <span class="n">erase_flash</span>
+<span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbserial</span><span class="o">-</span><span class="mi">2120</span> <span class="n">erase_flash</span>
+</pre></div>
+</div>
+<p>result:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="n">v4</span><span class="mf">.3</span>
+<span class="n">Serial</span> <span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbserial</span><span class="o">-</span><span class="mi">2120</span>
+<span class="n">Connecting</span><span class="o">.........</span>
+<span class="n">Detecting</span> <span class="n">chip</span> <span class="nb">type</span><span class="o">...</span> <span class="n">Unsupported</span> <span class="n">detection</span> <span class="n">protocol</span><span class="p">,</span> <span class="n">switching</span> <span class="ow">and</span> <span class="n">trying</span> <span class="n">again</span><span class="o">...</span>
+<span class="n">Detecting</span> <span class="n">chip</span> <span class="nb">type</span><span class="o">...</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">S2</span>
+<span class="n">Chip</span> <span class="ow">is</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">S2</span> <span class="p">(</span><span class="n">revision</span> <span class="n">v0</span><span class="mf">.0</span><span class="p">)</span>
+<span class="n">Features</span><span class="p">:</span> <span class="n">WiFi</span><span class="p">,</span> <span class="n">No</span> <span class="n">Embedded</span> <span class="n">Flash</span><span class="p">,</span> <span class="n">No</span> <span class="n">Embedded</span> <span class="n">PSRAM</span><span class="p">,</span> <span class="n">ADC</span> <span class="ow">and</span> <span class="n">temperature</span> <span class="n">sensor</span> <span class="n">calibration</span> <span class="ow">in</span> <span class="n">BLK2</span> <span class="n">of</span> <span class="n">efuse</span> <span class="n">V1</span>
+<span class="n">Crystal</span> <span class="ow">is</span> <span class="mi">40</span><span class="n">MHz</span>
+<span class="n">MAC</span><span class="p">:</span> <span class="mi">7</span><span class="n">c</span><span class="p">:</span><span class="n">df</span><span class="p">:</span><span class="n">a1</span><span class="p">:</span><span class="mi">32</span><span class="p">:</span><span class="n">f4</span><span class="p">:</span><span class="n">fa</span>
+<span class="n">Uploading</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Running</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Stub</span> <span class="n">running</span><span class="o">...</span>
+<span class="n">Erasing</span> <span class="n">flash</span> <span class="p">(</span><span class="n">this</span> <span class="n">may</span> <span class="n">take</span> <span class="n">a</span> <span class="k">while</span><span class="p">)</span><span class="o">...</span>
+<span class="n">Chip</span> <span class="n">erase</span> <span class="n">completed</span> <span class="n">successfully</span> <span class="ow">in</span> <span class="mf">13.2</span><span class="n">s</span>
+<span class="n">Hard</span> <span class="n">resetting</span> <span class="n">via</span> <span class="n">RTS</span> <span class="n">pin</span><span class="o">...</span>
+</pre></div>
+</div>
+<p>Firmware from  <a class="reference external" href="https://github.com/russhughes/st7789_mpy/blob/master/firmware/T-DISPLAY-ESP32/firmware.bin">Russ Hughes</a>.</p>
+<p>Switch to Program Mode:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">USB</span>        <span class="n">OTG</span>
+
+<span class="n">On</span>         <span class="n">On</span>
+<span class="n">o</span>   <span class="n">o</span>        <span class="n">o</span>   <span class="n">o</span>
+  <span class="n">o</span>   <span class="n">o</span>    <span class="n">o</span>   <span class="n">o</span>
+<span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span>    <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/H4a77f8684c144384a165d7a89476c602q.webp"><img alt="../_images/H4a77f8684c144384a165d7a89476c602q.webp" src="../_images/H4a77f8684c144384a165d7a89476c602q.webp" style="width: 599.4px; height: 423.59999999999997px;" />
+</a>
+<p>And then deploy the new firmware using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span>  <span class="o">--</span><span class="n">chip</span> <span class="n">esp32s2</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbserial</span><span class="o">-</span><span class="mi">2120</span> <span class="o">--</span><span class="n">baud</span> <span class="mi">115200</span> <span class="n">write_flash</span> <span class="mh">0x000</span> <span class="n">firmware</span><span class="o">.</span><span class="n">bin</span>
+<span class="n">esptool</span><span class="o">.</span><span class="n">py</span>  <span class="o">--</span><span class="n">chip</span> <span class="n">esp32s2</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbserial</span><span class="o">-</span><span class="mi">2120</span> <span class="o">--</span><span class="n">baud</span> <span class="mi">115200</span> <span class="n">write_flash</span> <span class="mh">0x000</span> <span class="n">adafruit</span><span class="o">-</span><span class="n">circuitpython</span><span class="o">-</span><span class="n">lilygo_ttgo_t8_s2_st7789</span><span class="o">-</span><span class="n">de_DE</span><span class="o">-</span><span class="mf">7.3.3</span><span class="o">.</span><span class="n">bin</span>
+</pre></div>
+</div>
+<p>result:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="n">v4</span><span class="mf">.3</span>
+<span class="n">Serial</span> <span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbserial</span><span class="o">-</span><span class="mi">2120</span>
+<span class="n">Connecting</span><span class="o">.........</span>
+<span class="n">Chip</span> <span class="ow">is</span> <span class="n">ESP32</span><span class="o">-</span><span class="n">S2</span> <span class="p">(</span><span class="n">revision</span> <span class="n">v0</span><span class="mf">.0</span><span class="p">)</span>
+<span class="n">Features</span><span class="p">:</span> <span class="n">WiFi</span><span class="p">,</span> <span class="n">No</span> <span class="n">Embedded</span> <span class="n">Flash</span><span class="p">,</span> <span class="n">No</span> <span class="n">Embedded</span> <span class="n">PSRAM</span><span class="p">,</span> <span class="n">ADC</span> <span class="ow">and</span> <span class="n">temperature</span> <span class="n">sensor</span> <span class="n">calibration</span> <span class="ow">in</span> <span class="n">BLK2</span> <span class="n">of</span> <span class="n">efuse</span> <span class="n">V1</span>
+<span class="n">Crystal</span> <span class="ow">is</span> <span class="mi">40</span><span class="n">MHz</span>
+<span class="n">MAC</span><span class="p">:</span> <span class="mi">7</span><span class="n">c</span><span class="p">:</span><span class="n">df</span><span class="p">:</span><span class="n">a1</span><span class="p">:</span><span class="mi">32</span><span class="p">:</span><span class="n">f4</span><span class="p">:</span><span class="n">fa</span>
+<span class="n">Uploading</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Running</span> <span class="n">stub</span><span class="o">...</span>
+<span class="n">Stub</span> <span class="n">running</span><span class="o">...</span>
+<span class="n">Configuring</span> <span class="n">flash</span> <span class="n">size</span><span class="o">...</span>
+<span class="n">Flash</span> <span class="n">will</span> <span class="n">be</span> <span class="n">erased</span> <span class="kn">from</span><span class="w"> </span><span class="mh">0x00000000</span> <span class="n">to</span> <span class="mh">0x0015bfff</span><span class="o">...</span>
+<span class="n">Compressed</span> <span class="mi">1421616</span> <span class="nb">bytes</span> <span class="n">to</span> <span class="mf">930326.</span><span class="o">..</span>
+<span class="n">Wrote</span> <span class="mi">1421616</span> <span class="nb">bytes</span> <span class="p">(</span><span class="mi">930326</span> <span class="n">compressed</span><span class="p">)</span> <span class="n">at</span> <span class="mh">0x00000000</span> <span class="ow">in</span> <span class="mf">90.5</span> <span class="n">seconds</span> <span class="p">(</span><span class="n">effective</span> <span class="mf">125.6</span> <span class="n">kbit</span><span class="o">/</span><span class="n">s</span><span class="p">)</span><span class="o">...</span>
+<span class="n">Hash</span> <span class="n">of</span> <span class="n">data</span> <span class="n">verified</span><span class="o">.</span>
+
+<span class="n">Leaving</span><span class="o">...</span>
+<span class="n">Hard</span> <span class="n">resetting</span> <span class="n">via</span> <span class="n">RTS</span> <span class="n">pin</span><span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="esp32-s3">
+<h2>ESP32-S3<a class="headerlink" href="#esp32-s3" title="Link to this heading">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/s3_v1.0.0_1_16x161.jpg"><img alt="../_images/s3_v1.0.0_1_16x161.jpg" src="../_images/s3_v1.0.0_1_16x161.jpg" style="width: 320.0px; height: 320.0px;" />
+</a>
+<a class="reference internal image-reference" href="../_images/s3_v1.0.0_2_16x16.jpg"><img alt="../_images/s3_v1.0.0_2_16x16.jpg" src="../_images/s3_v1.0.0_2_16x16.jpg" style="width: 320.0px; height: 320.0px;" />
+</a>
+<dl class="simple">
+<dt>S3 Firmware</dt><dd><p><a class="reference external" href="https://github.com/wemos/micropython/releases">https://github.com/wemos/micropython/releases</a></p>
+</dd>
+</dl>
+<p>First press IO0 and hold, then press RST</p>
+<p>Using esptool.py you can erase the flash with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="n">PORT_NAME</span> <span class="n">erase_flash</span>
+<span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbserial</span><span class="o">-</span><span class="mi">10</span> <span class="n">erase_flash</span>
+</pre></div>
+</div>
+<p>And then deploy the new firmware using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="n">PORT_NAME</span> <span class="o">--</span><span class="n">baud</span> <span class="mi">1000000</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mi">0</span> <span class="n">FIRMWARE</span><span class="o">.</span><span class="n">bin</span>
+<span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbserial</span><span class="o">-</span><span class="mi">110</span> <span class="o">--</span><span class="n">baud</span> <span class="mi">1000000</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mi">0</span> <span class="n">firmware</span><span class="o">-</span><span class="n">LOLIN_S3</span><span class="o">-</span><span class="n">v1</span><span class="mf">.19.1</span><span class="o">-</span><span class="mi">669</span><span class="o">-</span><span class="n">gd4b9df176</span><span class="o">.</span><span class="n">bin</span>
+<span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbserial</span><span class="o">-</span><span class="mi">110</span> <span class="o">--</span><span class="n">baud</span> <span class="mi">1000000</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mi">0</span> <span class="n">firmware</span><span class="o">-</span><span class="n">LOLIN_S3_PRO</span><span class="o">-</span><span class="n">v1</span><span class="mf">.19.1</span><span class="o">-</span><span class="mi">669</span><span class="o">-</span><span class="n">gd4b9df176</span><span class="o">.</span><span class="n">bin</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/s3_v1.0.0_4_16x9.jpg"><img alt="../_images/s3_v1.0.0_4_16x9.jpg" src="../_images/s3_v1.0.0_4_16x9.jpg" style="width: 640.0px; height: 360.0px;" />
+</a>
+</section>
+<section id="esp32-c3">
+<h2>ESP32-C3<a class="headerlink" href="#esp32-c3" title="Link to this heading">¶</a></h2>
+<p>Using esptool.py you can erase the flash with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">erase_flash</span>
+</pre></div>
+</div>
+<p>And then deploy the new firmware using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">chip</span> <span class="n">esp32</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mh">0x1000</span> <span class="n">esp32</span><span class="o">-</span><span class="mi">20180511</span><span class="o">-</span><span class="n">v1</span><span class="mf">.9.4</span><span class="o">.</span><span class="n">bin</span>
+</pre></div>
+</div>
+</section>
+<section id="raspberry-pico">
+<h2>Raspberry Pico<a class="headerlink" href="#raspberry-pico" title="Link to this heading">¶</a></h2>
+<p>Using esptool.py you can erase the flash with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">erase_flash</span>
+</pre></div>
+</div>
+<p>And then deploy the new firmware using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esptool</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">chip</span> <span class="n">esp32</span> <span class="o">--</span><span class="n">port</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span> <span class="n">write_flash</span> <span class="o">-</span><span class="n">z</span> <span class="mh">0x1000</span> <span class="n">esp32</span><span class="o">-</span><span class="mi">20180511</span><span class="o">-</span><span class="n">v1</span><span class="mf">.9.4</span><span class="o">.</span><span class="n">bin</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="mpyOS documentation and references" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../mpyOS.html" class="btn btn-neutral float-right" title="mpyOS - microPython Operating System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright - The mpyOS Documentation is Copyright © 2023, Uwe Strache and contributors.
+      <span class="lastupdated">Last updated on 20 Jul 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Versions and Downloads</span>
+    latest
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="//en/latest">latest</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>Downloads</dt>
+      
+        <dd><a href="//en/latest/mpyOS-docs.pdf">PDF</a></dd>
+      
+    </dl>
+    <hr/>
+    <dl>
+      <dt>External links</dt>
+        <dd>
+          <a href="https://www.micropython.org">micropython.org</a>
+        </dd>
+        <dd>
+          <a href="https://github.com/go2m/s_ilib">GitHub</a>
+        </dd>
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

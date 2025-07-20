@@ -1,0 +1,23 @@
+wifi
+====
+
+.. py:module:: wifi
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   wifi.wifi
+
+
+Module Contents
+---------------
+
+.. py:function:: wifi(_debug=False)
+
+   WIFI main modul
+   need a enviroment file is where you keep secret settings, passwords, and tokens!
+
+

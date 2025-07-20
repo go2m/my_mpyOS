@@ -1,0 +1,48 @@
+para
+====
+
+.. py:module:: para
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   para._debug
+   para.parameters
+   para.return_code
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   para.version
+   para.para
+
+
+Module Contents
+---------------
+
+.. py:function:: version()
+
+   version von para
+
+
+.. py:function:: para(p='-v', _debug=False)
+
+   display all parameters
+
+
+.. py:data:: _debug
+   :value: True
+
+
+.. py:data:: parameters
+
+.. py:data:: return_code
+   :value: '(c) 2022 go2m.eu command <para> version 0.5.2 22/10/28'
+
+

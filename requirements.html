@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>requirements &mdash; mpyOS for MicroPython 1.0.10 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+      <link rel="stylesheet" href="_static/customstyle.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/documentation_options.js?v=377e76b0"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="SCCP- Secure Console Command Processor" href="sccp.html" />
+    <link rel="prev" title="mpyOS - microPython Operating System" href="mpyOS.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            mpyOS for MicroPython
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ESP32/index.html">supported Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mpyOS.html">mpyOS - microPython Operating System</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sccp.html">SCCP- Secure Console Command Processor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reST.html">Willkommen Darstellung von Beispiel Texten mit Sphinx!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debug.html">debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">mpyOS license information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autoapi/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="links.html">links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">design</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mpyOS for MicroPython</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">requirements</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/requirements.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="requirements">
+<h1>requirements<a class="headerlink" href="#requirements" title="Link to this heading">¶</a></h1>
+<p>support Hardware</p>
+<p># This file is where you keep secret settings, passwords, and tokens!
+# If you put them in the code you risk committing that info or sharing it</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">secrets</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;hostname&#39;</span> <span class="p">:</span> <span class="s1">&#39;LOLIN S3 with ESP32S3&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ssid&#39;</span> <span class="p">:</span> <span class="s1">&#39;mySSID&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;password&#39;</span> <span class="p">:</span> <span class="s1">&#39;myWIFI_Password&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;aio_username&#39;</span> <span class="p">:</span> <span class="s1">&#39;my_adafruit_io_username&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;aio_key&#39;</span> <span class="p">:</span> <span class="s1">&#39;my_adafruit_io_key&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;timezone&#39;</span> <span class="p">:</span> <span class="s2">&quot;Europe/Berlin&quot;</span><span class="p">,</span> <span class="c1"># http://worldtimeapi.org/timezone,</span>
+    <span class="s1">&#39;utc_diff&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s1">&#39;ntp_server&#39;</span> <span class="p">:</span> <span class="s1">&#39;de.pool.ntp.org&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ap_ssid&#39;</span> <span class="p">:</span> <span class="s1">&#39;my_AP_SSID&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;auth&#39;</span> <span class="p">:</span> <span class="s1">&#39;None&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;channel&#39;</span> <span class="p">:</span> <span class="mi">1</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt;<span class="w"> </span>import<span class="w"> </span>webrepl_setup
+WebREPL<span class="w"> </span>daemon<span class="w"> </span>auto-start<span class="w"> </span>status:<span class="w"> </span>enabled
+
+Would<span class="w"> </span>you<span class="w"> </span>like<span class="w"> </span>to<span class="w"> </span><span class="o">(</span>E<span class="o">)</span>nable<span class="w"> </span>or<span class="w"> </span><span class="o">(</span>D<span class="o">)</span>isable<span class="w"> </span>it<span class="w"> </span>running<span class="w"> </span>on<span class="w"> </span>boot?
+<span class="o">(</span>Empty<span class="w"> </span>line<span class="w"> </span>to<span class="w"> </span>quit<span class="o">)</span>
+&gt;<span class="w"> </span>e
+Would<span class="w"> </span>you<span class="w"> </span>like<span class="w"> </span>to<span class="w"> </span>change<span class="w"> </span>WebREPL<span class="w"> </span>password?<span class="w"> </span><span class="o">(</span>y/n<span class="o">)</span><span class="w"> </span>y
+New<span class="w"> </span>password<span class="w"> </span><span class="o">(</span><span class="m">4</span>-9<span class="w"> </span>chars<span class="o">)</span>:<span class="w"> </span>micro
+Confirm<span class="w"> </span>password:<span class="w"> </span>micro
+No<span class="w"> </span>further<span class="w"> </span>action<span class="w"> </span>required
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>import<span class="w"> </span>mip
+mip.install<span class="o">(</span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/&quot;</span><span class="o">)</span>
+or
+mip.install<span class="o">(</span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/&quot;</span>,target<span class="o">=</span><span class="s2">&quot;/&quot;</span><span class="o">)</span>
+<span class="k">for</span><span class="w"> </span>Raspberry<span class="w"> </span>PICO<span class="w"> </span>W
+mip.install<span class="o">(</span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/&quot;</span>,target<span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="o">)</span>
+</pre></div>
+</div>
+<p>mip.install(“github:go2m/s_ilib/micropython/mpyOS/”)
+mip.install(“github:go2m/s_ilib/micropython/mpyOS/”,target=”/temp”)
+mip.install(“github:go2m/s_ilib/micropython/mpyOS/main.py”,target=”/temp”)</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="nt">&quot;urls&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;webrepl_cfg.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/webrepl_cfg.py&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;boot.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/boot.py&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;main.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/main.py&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;lib/debug.mpy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/lib/debug.mpy&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;lib/go2m_aes_decrypt_all.mpy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/lib/go2m_aes_decrypt_all.mpy&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;lib/go2m_mpyaes.mpy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/lib/go2m_mpyaes.mpy&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;lib/go2m_os_hw.mpy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/lib/go2m_os_hw.mpy&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;lib/md5.mpy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/lib/md5.mpy&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;lib/microWebCli.mpy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/lib/microWebCli.mpy&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;lib/sccp.mpy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/lib/sccp.mpy&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;lib/urequests.mpy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/lib/urequests.mpy&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;.ilib/l.pya&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;github:go2m/s_ilib/micropython/mpyOS/_ilib/l.pya&quot;</span><span class="p">]</span>
+<span class="p">],</span>
+<span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.12&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>if you want to use webrepl, run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>import<span class="w"> </span>webrepl_setup
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>MPY:<span class="w"> </span>soft<span class="w"> </span>reboot
+WebREPL<span class="w"> </span>server<span class="w"> </span>started<span class="w"> </span>on<span class="w"> </span>http://10.0.1.89:8266/
+Started<span class="w"> </span>webrepl<span class="w"> </span><span class="k">in</span><span class="w"> </span>normal<span class="w"> </span>mode
+CL:<span class="w"> </span>f4:12:fa:cb:21:f0
+Network<span class="w"> </span>configuration<span class="w"> </span>CL:<span class="w"> </span><span class="o">(</span><span class="s1">&#39;10.0.1.89&#39;</span>,<span class="w"> </span><span class="s1">&#39;255.255.255.0&#39;</span>,<span class="w"> </span><span class="s1">&#39;10.0.1.1&#39;</span>,<span class="w"> </span><span class="s1">&#39;10.0.1.1&#39;</span><span class="o">)</span>
+<span class="o">[</span>Errno<span class="w"> </span><span class="m">2</span><span class="o">]</span><span class="w"> </span>ENOENT
+root<span class="w"> </span>is<span class="w"> </span>empty
+main<span class="w"> </span>finsh
+MicroPython<span class="w"> </span>v1.19.1-602-g515088ffd3<span class="w"> </span>on<span class="w"> </span><span class="m">2022</span>-10-13<span class="p">;</span><span class="w"> </span>LOLIN<span class="w"> </span>S3<span class="w"> </span>with<span class="w"> </span>ESP32S3
+Type<span class="w"> </span><span class="s2">&quot;help()&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>information.
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="mpyOS.html" class="btn btn-neutral float-left" title="mpyOS - microPython Operating System" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sccp.html" class="btn btn-neutral float-right" title="SCCP- Secure Console Command Processor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright - The mpyOS Documentation is Copyright © 2023, Uwe Strache and contributors.
+      <span class="lastupdated">Last updated on 20 Jul 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Versions and Downloads</span>
+    latest
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="//en/latest">latest</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>Downloads</dt>
+      
+        <dd><a href="//en/latest/mpyOS-docs.pdf">PDF</a></dd>
+      
+    </dl>
+    <hr/>
+    <dl>
+      <dt>External links</dt>
+        <dd>
+          <a href="https://www.micropython.org">micropython.org</a>
+        </dd>
+        <dd>
+          <a href="https://github.com/go2m/s_ilib">GitHub</a>
+        </dd>
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mem &mdash; mpyOS for MicroPython 1.0.10 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+      <link rel="stylesheet" href="../../_static/customstyle.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+      <script src="../../_static/documentation_options.js?v=377e76b0"></script>
+      <script src="../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="para" href="../para/index.html" />
+    <link rel="prev" title="API Reference" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            mpyOS for MicroPython
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ESP32/index.html">supported Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mpyOS.html">mpyOS - microPython Operating System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requirements.html">requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sccp.html">SCCP- Secure Console Command Processor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reST.html">Willkommen Darstellung von Beispiel Texten mit Sphinx!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../debug.html">debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">mpyOS license information</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">mem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#attributes">Attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-contents">Module Contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mem.version"><code class="docutils literal notranslate"><span class="pre">version()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mem.mem"><code class="docutils literal notranslate"><span class="pre">mem()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mem.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mem.parameters"><code class="docutils literal notranslate"><span class="pre">parameters</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../para/index.html">para</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wifi/index.html">wifi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../links.html">links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../design.html">design</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">mpyOS for MicroPython</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">API Reference</a></li>
+      <li class="breadcrumb-item active">mem</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/autoapi/mem/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-mem">
+<span id="mem"></span><h1>mem<a class="headerlink" href="#module-mem" title="Link to this heading">¶</a></h1>
+<p><strong>Check Size ESP(RAM) Memory</strong></p>
+<p><em>to do’s</em></p>
+<ol class="arabic simple">
+<li><p>debug - is Standard debug (Userlevel).</p></li>
+<li><p>debug 1 is equivalent to True.</p></li>
+<li><p>debug 2 os debug decoding.</p></li>
+</ol>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mem.parameters" title="mem.parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parameters</span></code></a></p></td>
+<td><p>parameters from the secure command processor(SCCP).</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mem.version" title="mem.version"><code class="xref py py-obj docutils literal notranslate"><span class="pre">version</span></code></a>()</p></td>
+<td><p>version of mem</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#mem.mem" title="mem.mem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mem</span></code></a>([_debug])</p></td>
+<td><p>Check ESP(RAM) Memory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mem.main" title="mem.main"><code class="xref py py-obj docutils literal notranslate"><span class="pre">main</span></code></a>([parameters])</p></td>
+<td><p>main program</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mem.version">
+<span class="sig-prename descclassname"><span class="pre">mem.</span></span><span class="sig-name descname"><span class="pre">version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mem.version" title="Link to this definition">¶</a></dt>
+<dd><p>version of mem</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mem.mem">
+<span class="sig-prename descclassname"><span class="pre">mem.</span></span><span class="sig-name descname"><span class="pre">mem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mem.mem" title="Link to this definition">¶</a></dt>
+<dd><p>Check ESP(RAM) Memory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_debug</strong> – app debug Flag, default is disabled.</p>
+</dd>
+</dl>
+<p>mpyOS :~&gt;
+Input:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mem</span>
+</pre></div>
+</div>
+<p>Answer:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`Memory
+   total ............: 8004.38 KB
+   usage ............: 9.44 KB (0.12%)
+   free .............: 7994.86 KB (99.88%)
+
+(c) 2022 go2m.eu command &lt;mem&gt; version 0.3.3 22/10/28
+Status:successful``
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mem.main">
+<span class="sig-prename descclassname"><span class="pre">mem.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'_debug':</span> <span class="pre">False}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mem.main" title="Link to this definition">¶</a></dt>
+<dd><p>main program</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="mem.parameters">
+<span class="sig-prename descclassname"><span class="pre">mem.</span></span><span class="sig-name descname"><span class="pre">parameters</span></span><a class="headerlink" href="#mem.parameters" title="Link to this definition">¶</a></dt>
+<dd><p>parameters from the secure command processor(SCCP).</p>
+<p>mpyOS :~&gt;
+Input:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">app</span><span class="o">&gt;.</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_debug</strong> – app debug Flag, default is disabled.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="API Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../para/index.html" class="btn btn-neutral float-right" title="para" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright - The mpyOS Documentation is Copyright © 2023, Uwe Strache and contributors.
+      <span class="lastupdated">Last updated on 20 Jul 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Versions and Downloads</span>
+    latest
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="//en/latest">latest</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>Downloads</dt>
+      
+        <dd><a href="//en/latest/mpyOS-docs.pdf">PDF</a></dd>
+      
+    </dl>
+    <hr/>
+    <dl>
+      <dt>External links</dt>
+        <dd>
+          <a href="https://www.micropython.org">micropython.org</a>
+        </dd>
+        <dd>
+          <a href="https://github.com/go2m/s_ilib">GitHub</a>
+        </dd>
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

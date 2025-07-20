@@ -1,0 +1,83 @@
+mem
+===
+
+.. py:module:: mem
+
+.. autoapi-nested-parse::
+
+   **Check Size ESP(RAM) Memory**
+
+   *to do's*
+
+   #. debug - is Standard debug (Userlevel).
+   #. debug 1 is equivalent to True.
+   #. debug 2 os debug decoding.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   mem.parameters
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   mem.version
+   mem.mem
+   mem.main
+
+
+Module Contents
+---------------
+
+.. py:function:: version()
+
+   version of mem
+
+
+.. py:function:: mem(_debug=False)
+
+   Check ESP(RAM) Memory.
+
+   :param _debug: app debug Flag, default is disabled.
+
+
+   mpyOS :~>
+   Input::
+
+       mem
+
+   Answer::
+
+       `Memory
+          total ............: 8004.38 KB
+          usage ............: 9.44 KB (0.12%)
+          free .............: 7994.86 KB (99.88%)
+
+       (c) 2022 go2m.eu command <mem> version 0.3.3 22/10/28
+       Status:successful``
+
+
+
+.. py:function:: main(parameters={'_debug': False})
+
+   main program
+
+
+.. py:data:: parameters
+
+   parameters from the secure command processor(SCCP).
+
+   mpyOS :~>
+   Input::
+
+       <app>.
+
+   :param _debug: app debug Flag, default is disabled.
+
